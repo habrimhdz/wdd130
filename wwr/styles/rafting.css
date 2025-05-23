@@ -1,0 +1,128 @@
+:root {
+    --primary-color: #1034A6;
+    /* Egyptian blue */
+    --secondary-color: #FEFEFA;
+    /* Baby Powder */
+    --accent1-color: #2DC7FF;
+    /* Vivid Sky Blue */
+    --accent2-color: #DAA06D;
+    /* Buff */
+    --heading-font: "Montserrat", sans-serif;
+    --body-font: "Montserrat Alternates", sans-serif;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: white;
+}
+
+article {
+    position: absolute;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    top: 180px;
+    left: -16px;
+    opacity: 0.8;
+    padding: 16px;
+    width: 100%;
+    border-radius: 100px;
+
+}
+
+article p {
+    margin-top: 48px;
+    padding: 0;
+    font-size: 24px;
+    text-align: center;
+
+}
+
+.hero article img {
+    float: right;
+    width: 200px;
+    box-shadow: 0 0 10px rgba(5, 88, 255, 0.5);
+    border-radius: 100px;
+
+}
+
+/* Fixing the size of the logos and how they are displayed in the final page. Made it sepparate so it's visible */
+.socialmedia img {
+    align-items: left;
+    width: 2rem;
+    height: 2rem;
+}
+
+/*I took the liberty of making this part of the html a list to practice, so I'm adding this so it displays similar to the provided final example, which looks better */
+
+li {
+    display: inline-block;
+    margin: 0 8px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(63, 182, 221);
+}
