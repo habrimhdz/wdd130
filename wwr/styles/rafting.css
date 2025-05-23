@@ -104,7 +104,6 @@ article p {
 
 /* Fixing the size of the logos and how they are displayed in the final page. Made it sepparate so it's visible */
 .socialmedia img {
-    align-items: left;
     width: 2rem;
     height: 2rem;
 }
