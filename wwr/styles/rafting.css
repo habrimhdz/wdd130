@@ -12,6 +12,9 @@
 }
 
 header {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr;
     background-color: var(--primary-color);
     color: var(--accent2-color);
 }
@@ -31,6 +34,7 @@ header,
 main,
 footer {
     width: 840px;
+    /* remember to set to auto for full page*/
     margin: 0 auto;
 }
 
@@ -90,6 +94,7 @@ article p {
     margin-top: 48px;
     padding: 0;
     font-size: 24px;
+    font-family: var(--body-font);
     text-align: center;
 
 }
@@ -115,6 +120,18 @@ li {
     margin: 0 8px;
     color: white;
     font-size: 1.5rem;
+    font-family: var(--heading-font);
+    padding: 10px;
+    background-color: var(--accent2-color);
+    border-radius: 10px;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 25px;
+    justify-content: space-evenly;
 }
 
 a {
@@ -124,4 +141,99 @@ a {
 
 a:hover {
     color: rgb(63, 182, 221);
+}
+
+header img {
+    height: auto;
+    margin: 8px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+section.history h2 {
+    display: flex;
+    justify-content: center;
+    margin-left: 55px;
+    font-size: 2rem;
+    margin-bottom: 16px;
+}
+
+
+section.history img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(5, 88, 255, 0.5);
+}
+
+.headlesstory {
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+section.history p {
+    line-height: 1.5;
+    text-align: center;
+    margin-top: 55px;
+
+}
+
+section.adventure h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    margin-bottom: 16px;
+
+}
+
+
+
+.adventuretitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(5, 88, 255, 0.5);
+}
+
+
+
+.headlessadventure {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.headlessadventure img {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(5, 88, 255, 0.5);
+}
+
+figcaption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    padding: 16px;
 }
