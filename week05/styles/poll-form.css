@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: kapakana, serif;
+    font-size: large;
+    color: black;
+    display: grid;
+    place-items: center;
+}
+
+header {
+    margin: 30px auto;
+    width: 600px;
+
+
+}
+
+h1 {
+    text-align: center;
+    background: lightgray;
+    box-shadow: 5px 5px;
+}
+
+form {
+    margin: center;
+    width: 300px;
+    text-align: center;
+    padding: 1px;
+    border: 3px solid rgb(black);
+    border-radius: 3%;
+    background-color: lightgray;
+    display: grid;
+    place-items: center;
+}
+
+fieldset {
+    display: grid;
+    place-items: center;
+}
+
+legend {
+    font-style: italic;
+    padding: 1px;
+    color: purple;
+}
+
+label {
+    text-align: right;
+    padding-right: 1rem;
+    color: black;
+}
+
+input,
+select,
+textarea {
+    padding: 1%;
+    font-size: larger;
+}
+
+input[type="checkbox"] {
+    margin-left: 100px;
+    width: 20px;
+    height: 20px;
+    vertical-align: bottom;
+}
+
+button:hover {
+    color: black;
+    background-color: lightgray;
+}
+
+button {
+    font-style: bold;
+    font-size: medium;
+    margin: 4px;
+    padding: 1px;
+    font-family: kapakana, serif;
+    cursor: pointer;
+    padding: 3px 5px;
+}
+
+footer {
+    margin: 20px;
+    text-align: center;
+    background-color: lightgray;
+    border-radius: 6px;
+
+}
+
+#browser {
+    font-size: medium;
+    font-family: kapakana, serif;
+    color: lightgray;
+
+}
+
+textarea::placeholder {
+    font-family: kapakana, serif;
+    color: lightgray;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    display: grid;
+    grid-template-columns: 3fr 1 fr;
+    margin: 5px;
+}
