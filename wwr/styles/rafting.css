@@ -321,9 +321,13 @@ figcaption {
 
 .feedback {
     margin-top: 211px;
-    padding:1px;
+    padding: 1px;
     background-color: white;
-    color:#1034A6;
+    color: #1034A6;
     text-align: center;
-    
+
+}
+
+#subscribe {
+    margin-left: 10px;
 }
