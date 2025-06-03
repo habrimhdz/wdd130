@@ -16,7 +16,8 @@ header {
     align-items: center;
     grid-template-columns: auto 1fr;
     background-color: var(--primary-color);
-    color: var(--accent2-color);
+    color: var(--secondary-color);
+
 }
 
 * {
@@ -27,13 +28,13 @@ header {
 
 body {
     font-family: var(--body-font);
-    color: var(--accent1-color);
+    color: darkgrey;
 }
 
 header,
 main,
 footer {
-    width: 840px;
+    width: auto;
     /* remember to set to auto for full page*/
     margin: 0 auto;
 }
@@ -50,6 +51,7 @@ section,
 article {
     margin: 16px;
     padding: 8px;
+
 }
 
 .socialmedia a {
@@ -74,13 +76,13 @@ h1 {
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
-    color: white;
+    color: #111111;
 }
 
 article {
     position: absolute;
     background-color: var(--primary-color);
-    color: var(--accent2-color);
+    color: var(--secondary-color);
     top: 180px;
     left: -16px;
     opacity: 0.8;
@@ -118,12 +120,13 @@ article p {
 li {
     display: inline-block;
     margin: 0 8px;
-    color: white;
-    font-size: 1.5rem;
+    color: darkgrey;
+    font-size: 1rem;
     font-family: var(--heading-font);
-    padding: 10px;
+    padding: 20px;
     background-color: var(--accent2-color);
-    border-radius: 10px;
+    border-radius: 20px;
+    margin: 10px;
 }
 
 nav ul {
@@ -131,16 +134,17 @@ nav ul {
     flex-wrap: wrap;
     list-style: none;
     padding: 25px;
-    justify-content: space-evenly;
+    justify-content: right;
 }
 
 a {
-    color: white;
+    color: blacK;
     text-decoration: none;
+
 }
 
 a:hover {
-    color: rgb(63, 182, 221);
+    color: var(--primary-color-);
 }
 
 header img {
@@ -232,8 +236,85 @@ figcaption {
 footer {
     display: flex;
     flex-direction: row;
-    justify-content: right;
+    justify-content: space-around;
     background-color: var(--primary-color);
-    color: var(--accent2-color);
+    color: var(--secondary-color);
     padding: 16px;
+}
+
+footer a {
+    justify-content: left;
+}
+
+.employee-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 150px;
+}
+
+.employee-img img {
+    width: 200px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(5, 88, 255, 0.5);
+
+}
+
+.employees h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.contactinfo {
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(5, 88, 255, 0.5);
+    color: #1034A6;
+
+}
+
+
+iframe {
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(5, 88, 255, 0.5);
+}
+
+form {
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(5, 88, 255, 0.5);
+    font-style: italic;
+    color: #1034A6;
+    gap: 10px;
+}
+
+.name-email {
+    margin: 10px;
+}
+
+.purpose-newsletter {
+    margin: 10px;
+}
+
+button {
+    margin-bottom: 10px;
+    height: 50px;
+    width: 100px;
+    cursor: pointer;
+}
+
+#comments {
+    width: 400px;
+    height: 100px;
+
+}
+
+figcaption {
+    color: #1034A6;
 }
