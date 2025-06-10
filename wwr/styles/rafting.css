@@ -17,6 +17,10 @@ header {
     grid-template-columns: auto 1fr;
     background-color: var(--primary-color);
     color: var(--secondary-color);
+    box-shadow: 0 0 30px rgba(5, 88, 255, 0.5);
+    border-bottom: 5px solid black;
+    width: 100%;
+    height: 100px;
 
 }
 
@@ -34,9 +38,9 @@ body {
 header,
 main,
 footer {
-    width: auto;
+    width: 100%;
+    height: auto;
     /* remember to set to auto for full page*/
-    margin: 0 auto;
 }
 
 h1,
@@ -60,12 +64,37 @@ article {
 
 .hero {
     position: relative;
+
 }
 
-.hero img {
+.heromainimage {
     display: block;
+    box-shadow: 0 0 30px rgba(5, 88, 255, 0.5);
+    justify-content: center;
+    margin: 0 auto;
+    width: 80%;
+    height: 80vh;
+}
+
+.herohome img {
+    position: relative;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;
+    max-height: 100vh;
+    object-fit: cover;
+    box-shadow: 0 0 30px rgba(5, 88, 255, 0.5);
+}
+
+.herohomeheader {
+    position: absolute;
+    padding: 16px;
+    text-align: center;
+    top: 300px;
+    opacity: 0.7;
+    background-color: white;
+    color: #111111;
+    z-index: 2;
 }
 
 h1 {
@@ -75,7 +104,7 @@ h1 {
     padding: 16px;
     text-align: center;
     opacity: 0.7;
-    background-color: var(--accent1-color);
+    background-color: white;
     color: #111111;
 }
 
@@ -119,14 +148,10 @@ article p {
 
 li {
     display: inline-block;
+    color: var(--secondary-color);
     margin: 0 8px;
-    color: darkgrey;
-    font-size: 1rem;
     font-family: var(--heading-font);
     padding: 20px;
-    background-color: var(--accent2-color);
-    border-radius: 20px;
-    margin: 10px;
 }
 
 nav ul {
@@ -135,6 +160,16 @@ nav ul {
     list-style: none;
     padding: 25px;
     justify-content: right;
+}
+
+nav ul li a {
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+}
+
+nav ul li a:hover {
+    color: var(--accent1-color);
+    text-decoration: underline;
 }
 
 a {
@@ -148,7 +183,8 @@ a:hover {
 }
 
 header img {
-    height: auto;
+    height: 100px;
+    width: auto;
     margin: 8px;
     margin-left: 50px;
     margin-bottom: 20px;
@@ -156,6 +192,7 @@ header img {
 
 section.history h2 {
     display: flex;
+    position: relative;
     justify-content: center;
     margin-left: 55px;
     font-size: 2rem;
@@ -165,12 +202,13 @@ section.history h2 {
 
 section.history img {
     display: flex;
+    position: relative;
     justify-content: center;
     margin-bottom: 20px;
     margin-right: 20px;
     margin-left: 20px;
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(5, 88, 255, 0.5);
 }
@@ -185,7 +223,9 @@ section.history img {
 section.history p {
     line-height: 1.5;
     text-align: center;
-    margin-top: 55px;
+    margin-top: 100px;
+    color: #1034A6;
+
 
 }
 
@@ -240,6 +280,8 @@ footer {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     padding: 16px;
+    box-shadow: 0 0 30px rgba(5, 88, 255, 0.5);
+    margin-top: 50px;
 }
 
 footer a {
@@ -335,4 +377,223 @@ figcaption {
 
 .wireframe {
     color: white;
+}
+
+.wireframe:hover {
+    color: var(--accent1-color);
+    text-decoration: underline;
+}
+
+
+
+.purpose {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    text-align: center;
+    margin-top: 150px;
+    color: #1034A6;
+
+}
+
+.purpose p {
+    margin-top: 50px;
+    line-height: 1.5;
+    align-items: center;
+
+}
+
+
+.purpose img {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(5, 88, 255, 0.5);
+}
+
+.newsletterform {
+    text-align: center;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    margin-top: 150px;
+}
+
+.homebutton {
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.homebutton:hover {
+    background-color: var(--accent1-color);
+    color: white;
+    border-radius: 10px;
+    opacity: 0.5;
+}
+
+.visittrips {
+    display: block;
+    text-align: right;
+    position: absolute;
+    right: 50px;
+    margin-top: 50px;
+    margin-bottom: 300px;
+    max-width: 700px;
+    padding: 10px;
+    color: black;
+}
+
+.tripslink {
+    color: #1034A6;
+}
+
+.visittrips a {
+    color: #1034A6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.visittrips a:hover {
+    text-decoration: underline;
+    color: rgb(0, 140, 255);
+}
+
+hr {
+    height: 1px;
+    background-color: black;
+    width: 99%;
+    margin-top: 10px;
+    margin: 6rem auto;
+    box-shadow: 0 0 10px rgba(5, 88, 255, 0.5);
+}
+
+.triptitle {
+    position: relative;
+}
+
+.tripimages {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+
+}
+
+.trip1 img,
+.trip3 img {
+    display: flex;
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(5, 88, 255, 0.5);
+
+}
+
+.trip2 img {
+    display: flex;
+    width: 400px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(5, 88, 255, 0.5);
+
+}
+
+
+.tripimages figcaption {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+
+}
+
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(5, 88, 255, 0.5);
+}
+
+.trip-image {
+    width: 100%;
+    border-radius: 20px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.description {
+    position: absolute;
+    bottom: 0;
+    background: var(--primary-color);
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    border-radius: 0 0 20px 20px;
+}
+
+.image-wrapper:hover .description {
+    opacity: 0.9;
+}
+
+.image-wrapper:hover .trip-image {
+    transform: scale(1.05);
+}
+
+/* Trip Table */
+
+table {
+    width: 50%;
+    font-family: var(--body-font);
+    box-shadow: 0 0 30px rgba(5, 88, 255, 0.5);
+    margin-left: 550px;
+    margin-top: 100px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: center;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: white;
+    text-transform: uppercase;
+}
+
+td {
+    color: #1034A6;
+}
+
+tr:hover {
+    background-color: var(--accent2-color);
+    opacity: 1;
+}
+
+.visitcontact {
+    display: block;
+    text-align: center;
+    width: 300px;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 50px;
+    color: black;
+}
+
+.visitcontact a:hover {
+    text-decoration: underline;
+    color: var(--accent1-color);
+}
+
+.visitcontact a {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    align-items: center;
+
 }

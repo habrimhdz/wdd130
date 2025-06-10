@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Angel Habrim Hernandez Garcia">
+    <meta name="description" content="Rafting Website Home Page">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+    <!-- Font 1: Montserrat-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Font 2: Montserrat Alternates same family as Montserrat
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">-->
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img src="images/wwr_logo.png" alt="Logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="trips.html">Trips</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <div class="herohome">
+            <img src="images/heromain2.webp" alt="Hero Image">
+            <h1 class="herohomeheader">Splash White Water Rafting</h1>
+        </div>
+        <hr />
+        <!-- CSS GRID: Two images and content about the wwr site purpose/offerings: -->
+        <section class="purpose">
+            <div class="purposeimage1">
+                <figure>
+                    <img src="images/sad.jpg" alt="Rafting Adventure">
+                    <figcaption>Without Splash White Water Rafting :(</figcaption>
+                </figure>
+            </div>
+            <div class="purposecontent">
+                <h2>Our Motto</h2>
+                <p>"Some rafting a year, keeps the sadness away."</p>
+                <p>We offer the best white water rafting experience in the entire country, with thousands of happy
+                    customers,
+                    an expansive selection of trips, and a charming and friendly staff prepared to instruct you
+                    accurately.
+                </p>
+            </div>
+            <div class="purposeimage2">
+                <figure>
+                    <img src="images/happy.jpg" alt="Rafting Adventure">
+                    <figcaption>With Splash White Water Rafting :)</figcaption>
+                </figure>
+            </div>
+        </section>
+        <hr />
+        <!-- Visit the trips page: *SIDE TO SIDE*-->
+        <section class="visittrips">
+            <h2>Visit our Trips Page</h2>
+            <p class="tripslink">Get to know all of our trip accomodations and options. We have special discounts for
+                each season, and
+                personalized experiences. Check it out!</p>
+            <a href="trips.html">
+                Go to Trips:
+            </a>
+
+        </section>
+        <!-- Newsletter form: *SIDE TO SIDE* -->
+        <form class="newsletterform">
+            <fieldset>
+                <legend>Sign up for our newsletter:</legend>
+                <div class="name-email">
+                    <label for="fullname">Your Name:</label>
+                    <input type="text" id="fullname" name="fullname">
+                </div>
+                <div class="name-email">
+                    <label for="useremail">Your Email:</label>
+                    <input type="text" id="useremail" name="useremail">
+                </div>
+                <button class="homebutton" type="submit">Send it!</button>
+            </fieldset>
+        </form>
+    </main>
+</body>
+<footer>
+    <p>© 2025 Splash White Water Rafting ; Angel Habrim Hernandez Garcia</p>
+    <nav class="socialmedia">
+        <a href="https://www.facebook.com/">
+            <img src="images/facebook.webp" alt="Facebook"></a>
+        <a href="https://www.instagram.com/">
+            <img src="images/instagram.webp" alt="Instagram"></a>
+        <a href="https://www.X.com/">
+            <img src="images/x.webp" alt="Twitter"></a>
+    </nav>
+</footer>
+<!-- Remember to not use a single column layout for full credit-->
+
+</html>
